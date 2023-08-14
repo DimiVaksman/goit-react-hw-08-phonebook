@@ -1,24 +1,29 @@
-import { Phonebook } from './Phonebook/Phonebook';
-import { Contacts } from './Contacts/Contacts';
-import { FilterContacts } from './FilterContacts/FilterContacts';
-import { Container } from './Apps.styled';
-import backGr from 'image/phone_035.jpg';
+
+import React from 'react';
+import { Routes, Route, Link } from "react-router-dom";
+import {Register} from './Register/Register';
+import {Home} from '../Pages/Home/Home'
+import {ContactsApp} from '../Pages/Contacts/Contacts'
+import { Navigations , NavbarLink} from './Apps.styled';
+import { Login } from 'Pages/Login/Login';
+
+
 
 export const App = () => {
   return (
-    <div
-
-    >
-      <Container       style={{
-        backgroundImage: `url(${backGr})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center top',
-        backgroundSize: '1200px 1100px',
-      }}>
-        <Phonebook />
-        <FilterContacts />
-        <Contacts />
-      </Container>
+    <div>
+    <Navigations>
+  <NavbarLink to="/">Home</NavbarLink>
+  <NavbarLink to="/contactsapp">Contacts</NavbarLink>
+  <NavbarLink to="/register">Register </NavbarLink>
+  <NavbarLink to="/login">Login </NavbarLink>
+</Navigations>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path='/register' element ={<Register/>}/>
+        <Route path='/login' element={<Login />} />
+        <Route path="/contactsapp" element={<ContactsApp />}/>
+      </Routes>
     </div>
   );
 };
