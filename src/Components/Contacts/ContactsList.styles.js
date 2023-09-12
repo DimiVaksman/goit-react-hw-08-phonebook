@@ -60,7 +60,7 @@ export const ContactDelete = styled.button`
   margin: 0px 10px;
   border: none;
   border-radius: 50%;
-  background-color: #391717;
+  background-color: #72dcff;
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 700;

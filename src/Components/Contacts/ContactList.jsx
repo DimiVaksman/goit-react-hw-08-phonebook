@@ -12,7 +12,7 @@ import {
   ContactIcon,
   ContactText,
   ContactDelete,
-} from './ContactList.styles';
+} from './ContactsList.styles';
 
 // компонент використовую список контактів з стору через useSelector
 export function ContactList() {

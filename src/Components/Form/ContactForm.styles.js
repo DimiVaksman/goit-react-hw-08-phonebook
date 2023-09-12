@@ -53,7 +53,7 @@ export const FormButton = styled.button`
   margin: 0px auto;
   border: none;
   border-radius: 5px;
-  background-color: rgb(57, 23, 23);
+  background-color: #72dcff;
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 400;
