@@ -21,10 +21,10 @@ export const Nav = styled(NavLink)`
 
   &:hover,
   &:focus {
-    color: rgb(57, 23, 23);
+    color: #72dcff;
   }
 
   &.active {
-    color: rgb(57, 23, 23);
+    color: #72dcff;
   }
 `;

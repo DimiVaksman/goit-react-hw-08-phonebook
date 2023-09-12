@@ -40,9 +40,4 @@ section {
   margin-top: 50px;
 }
 
-img {
-  display: block;
-    object-fit: cover;
-    object-position: center center;
-}
 `;

@@ -75,7 +75,7 @@ export const ContactDelete = styled.button`
   &:hover,
   &:focus {
     background-color: #fff;
-    color: #391717;
+    color: #72dcff;
   }
 
   &:active {
